@@ -9,7 +9,7 @@ import (
 // SVG struct, SVG contains elementry attributes like
 // svg string, width, height
 type SVG struct {
-	svgString    string
+	svgString     string
 	width, height int
 }
 
@@ -21,6 +21,16 @@ func (s *SVG) SetWidth(w int) {
 // SetHeight sets SVG object's height
 func (s *SVG) SetHeight(h int) {
 	s.height = h
+}
+
+// GetWidth gets SVG object's width
+func (s *SVG) GetWidth() int {
+	return s.width
+}
+
+// GetHeight gets SVG object's height
+func (s *SVG) GetHeight() int {
+	return s.height
 }
 
 // header returns string representing SVG object's header(staring) part
